@@ -1,0 +1,11 @@
+*.o
+*.d
+minishell
+*.a
+1
+2
+3
+4
+5
+minishell_tester
+.vscode

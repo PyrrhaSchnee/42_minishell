@@ -1,0 +1,66 @@
+
+{
+   readline_leaks
+   Memcheck:Leak
+   ...
+   fun:xmalloc
+   obj:/usr/lib/x86_64-linux-gnu/libreadline*
+}
+
+{
+   tinfo_leaks
+   Memcheck:Leak
+   ...
+   fun:strdup
+   obj:/usr/lib/x86_64-linux-gnu/libtinfo*
+}
+
+{
+   readline_rl_initialize
+   Memcheck:Leak
+   ...
+   fun:rl_initialize
+   obj:/usr/lib/x86_64-linux-gnu/libreadline*
+}
+
+{
+   readline_history
+   Memcheck:Leak
+   ...
+   fun:add_history
+   obj:/usr/lib/x86_64-linux-gnu/libreadline*
+}
+
+
+{
+   readline_rl_expand_prompt
+   Memcheck:Leak
+   ...
+   fun:rl_expand_prompt
+   obj:/usr/lib/x86_64-linux-gnu/libreadline*
+}
+
+
+{
+   readline_rl_redisplay_1
+   Memcheck:Leak
+   ...
+   fun:rl_redisplay
+   obj:/usr/lib/x86_64-linux-gnu/libreadline*
+}
+
+{
+   readline_rl_redisplay_2
+   Memcheck:Leak
+   ...
+   fun:readline_internal_setup
+   obj:/usr/lib/x86_64-linux-gnu/libreadline*
+}
+
+{
+   readline_internal_char
+   Memcheck:Leak
+   ...
+   fun:readline_internal_char
+   obj:/usr/lib/x86_64-linux-gnu/libreadline*
+}
